@@ -1,0 +1,16 @@
+class uberPrice {
+  constructor(mode, kilometer) {
+    this.mode = mode;
+    this.kilometer = kilometer;
+  }
+  getAmount() {
+    if (this.mode == "auto") {
+      console.log(12 * this.kilometer + " Rs");
+    }
+    if (this.mode == "car") {
+      console.log(20 * this.kilometer + " Rs");
+    }
+  }
+}
+let trip1 = new uberPrice("car", 10);
+trip1.getAmount();
