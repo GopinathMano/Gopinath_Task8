@@ -7,9 +7,11 @@ class uberPrice {
     if (this.mode == "auto") {
       console.log(12 * this.kilometer + " Rs");
     }
-    if (this.mode == "car") {
+    else if (this.mode == "car") {
       console.log(20 * this.kilometer + " Rs");
     }
+    else { console.log("No data found")}
+    
   }
 }
 let trip1 = new uberPrice("car", 10);
